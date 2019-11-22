@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Vladimir">
+        <meta charset="UTF8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/practice_style.css">
+        <title>How to prepare for IELTS Exam - tips for future international students in Douglas College - Practice Section</title>
+    </head>
+    <script>             
+function ShowMenu(){
+    document.getElementById("h1").innerHTML=document.getElementById("n1").innerHTML;
+}
+function HideMenu(){
+    document.getElementById("h1").innerHTML="";
+}    
+function testScore1(form1){
+    var correctAnswers=0;  
+    
+    var answer1;    
+        for(let i=0; i<document.form1.r1.length;i++)    
+        {
+            if(document.form1.r1[i].checked)
+            {
+               answer1 = document.form1.r1[i].id;            
+                break;
+            }
+        }
+        if (answer1!="r13"){
+            alert('1st is not correct - the correct answer is "Premium"');
+        }
+        else{
+            alert('1st is correct'); 
+            correctAnswers++;     
+        }
+
+        var answer2;    
+        for(let i=0; i<document.form1.r2.length;i++)    
+        {
+            if(document.form1.r2[i].checked)
+            {
+               answer2 = document.form1.r2[i].id;            
+                break;
+            }
+        }
+        if (answer2!="r21"){
+            alert('2nd is not correct - the correct answer is "Port"');
+        }
+        else{
+            alert('2nd is correct'); 
+            correctAnswers++;     
+        }
+
+        if(document.form1.q3.value.toLowerCase()=="motivation"){
+        correctAnswers++;
+        alert('3rd is correct');
+        correctAnswers++;
+    }
+    else{
+        alert('3rd is not correct - the correct answer is "motivation"');
+    }
+
+    if(document.form1.q4.value.toLowerCase()=="modules"){
+        correctAnswers++;
+        alert('4th is correct');
+        correctAnswers++;
+    }
+    else{
+        alert('4th is not correct - the correct answer is "modules"');
+    }
+
+    if(document.form1.q5.value.toLowerCase()=="school"){
+        correctAnswers++;
+        alert('5th is correct');
+        correctAnswers++;
+    }
+    else{
+        alert('5th is not correct - the correct answer is "school"');        
+    }
+    alert("Your result is "+correctAnswers +" out of 5");
+}
+
+function testScore2(form2){
+    var correctAnswers=0; 
+
+    var answer1="";    
+        for(let i=0; i<document.form2.ch1.length;i++)    
+        {
+            if(document.form2.ch1[i].checked)
+            {
+               answer1 += document.form2.ch1[i].id;                                
+            }
+        }
+        if (answer1=="ch12ch17"){
+            alert('1st is correct');
+            correctAnswers++;
+        }
+        else{
+            alert('1st is not  correct- the correct answers are "B" and "G"');      
+        }
+
+        var answer2="";    
+        for(let i=0; i<document.form2.ch2.length;i++)    
+        {
+            if(document.form2.ch2[i].checked)
+            {
+               answer2 += document.form2.ch2[i].id;                                
+            }
+        }
+        if (answer2=="ch23ch25"){
+            alert('2nd is correct');
+            correctAnswers++;
+        }
+        else{
+            alert('2nd is not  correct- the correct answers are "C" and "E"');               
+        }
+        alert("Your result is "+correctAnswers +" out of 2");  
+    }
+
+    </script>
+    <body>
+        <header id="h1" name="h1"></header>
+        <aside id="aside1" name="aside1">
+                <div id="d1" name="d1" onclick="ShowMenu()">SHOW<br>MENU</div>
+        </aside>
+                <nav id="n1" name="n1">
+                    <div id="d2" name="d2"><a href="about.html" class="aa">About IELTS</a></div>
+                    <div id="d3" name="d3"><a href="practice.html" class="aa">IELTS Practice</a></div>
+                    <div id="d4" name="d4"><a href="tips.html" class="aa">IELTS Tips</a></div>
+                    <div id="d5" name="d5"><a href="links.html" class="aa">Useful Links</a></div>
+                    <div id="d6" name="d6"><a href="index.html" class="aa">Home Page</a></div>
+                </nav>
+                <article id="art1" name="art1" onmouseover="HideMenu()">
+                    <section id="s1" name="s1" class="s1">
+                        <h3>Sample Listening - Multiple Choice (one answer) and Form Complition<sup>*</sup> </h3>
+                        <form action="" name="form1">
+                            <hr>
+                                <p>Audio for Questions 1,2 <br><audio src="mp3/insurance.mp3" controls></audio><br> Audio for Questions 3,4,5<br><audio src="mp3/university.mp3" controls></audio></p>                                                                                   
+                                <hr>
+                            <ol>                                
+                                    <li>
+                                            <label for="">Type of insurance chosen: </label></div>
+                                                     <div class="form_div">
+                                                           <ul>
+                                                                   <li><input type="radio" name="r1" id="r11">Economy</li>
+                                                                   <li><input type="radio" name="r1" id="r12">Standard</li>
+                                                                   <li><input type="radio" name="r1" id="r13">Premium </li>                                                            
+                                                           </ul>
+                                                       </div>                                                   
+                                       </li>
+                                       <li>
+                                            <label for="">Customer wants goods delivered to </label></div>
+                                                        <div class="form_div">
+                                                           <ul>
+                                                                   <li><input type="radio" name="r2" id="r21">Port</li>
+                                                                   <li><input type="radio" name="r2" id="r22">Home</li>
+                                                                   <li><input type="radio" name="r2" id="r23">Depot</li>                                                            
+                                                           </ul>
+                                                       </div>                                                   
+                                       </li>
+      
+                                       <li>
+                                            <label for="">Studying with the Open University demanded a great deal of</label>                                        
+                                            <input type="text" name="q3" id="q3">
+                                    </li>                                                             
+                                    <li>
+                                            <label for="">It was helpful that the course was structured in</label>                                        
+                                            <input type="text" name="q4" id="q4">
+                                    </li>
+                                    <li>
+                                            <label for="">She enjoyed meeting other students at</label>                                        
+                                            <input type="text" name="q5" id="q5"> 
+                                    </li>                                
+                            </ol>               
+               
+                            <div class="buttons">
+                                    <input type="button" value="Check Answers" onclick="testScore1(form1)">
+                                        <input type="reset"  value="Clear All">        
+                                </div>  
+                    </form>                               
+                        </section> 
+                    <section id="s2" name="s2" class="s2">
+                            <h3>Sample Academic Reading - Multiple Choice (more than one answer)<sup>*</sup> </h3>     
+                                <form action="" name="form2">
+                                    <hr>
+                                    <ul>
+                                        <li>
+                                                Clearly, when older people do heavy physical work, their age may affect their productivity.
+                                                But other skills may increase with age, including many that are crucial for good management,
+                                                such as an ability to handle people diplomatically, to run a meeting or to spot a problem
+                                                before it blows up. Peter Hicks, who co-ordinates OECD work on the policy implications of
+                                                ageing, says that plenty of research suggests older people are paid more because they are
+                                                worth more.                                       
+                                        </li>
+                                        <li>
+                                                And the virtues of the young may be exaggerated. ‘The few companies that have kept on
+                                                older workers find they have good judgement and their productivity is good,’ says Peter
+                                                Peterson, author of a recent book on the impact of ageing. ‘Besides, their education
+                                                standards are much better than those of today’s young high-school graduates.’ Companies
+                                                may say that older workers are not worth training because they are reaching the end of their
+                                                working lives; in fact, young people tend to switch jobs so frequently that they offer the worst
+                                                returns on training. The median age for employer-driven training is the late 40s and early
+                                                50s, and this training goes mainly to managers.
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                        <ol>
+                                                <li>Which TWO advantages are mentioned by the writer of the text?
+                                                    <ul>
+                                                            <li><input type="checkbox" name="ch1" id="ch11"> A. They are less likely to be involved in careless accidents.</li>
+                                                            <li><input type="checkbox" name="ch1" id="ch12"> B. They can predict areas that may cause trouble in the future.</li>
+                                                            <li><input type="checkbox" name="ch1" id="ch13"> C. They are able to train younger workers.</li>
+                                                            <li><input type="checkbox" name="ch1" id="ch14"> D. They can deal with unexpected problems.</li>
+                                                            <li><input type="checkbox" name="ch1" id="ch15"> E. They are more conscientious.</li>
+                                                            <li><input type="checkbox" name="ch1" id="ch16"> F. They are prepared to work for lower salaries.</li>
+                                                            <li><input type="checkbox" name="ch1" id="ch17"> G. They are more skilled in personal relationships</li>
+                                                    </ul>
+                                                </li>
+                                                <li>Which TWO disadvantages are mentioned by the writer of the text?
+                                                    <ul>
+                                                            <li><input type="checkbox" name="ch2" id="ch21"> A. They are too confident of their own skills.</li>
+                                                            <li><input type="checkbox" name="ch2" id="ch22"> B. They may injure themselves.</li>
+                                                            <li><input type="checkbox" name="ch2" id="ch23"> C. They do not stay with the same company for very long.</li>
+                                                            <li><input type="checkbox" name="ch2" id="ch24"> D. Their training has been too theoretical.</li>
+                                                            <li><input type="checkbox" name="ch2" id="ch25"> E. They are not as well educated as older workers.</li>
+                                                            <li><input type="checkbox" name="ch2" id="ch26"> F. They demand higher salaries.</li>
+                                                    </ul>
+                                                </li>                                                        
+                                        </ol>
+                                    <div class="buttons">
+                                            <input type="button" value="Check Answers" onclick="testScore2(form2)">
+                                            <input type="reset"  value="Clear All">        
+                                    </div>  
+                                </form>                                                  
+                            <hr>
+                            <p class="ref"><sup>*</sup>The tasks and audio on this page are taken from <a href="https://www.ielts.org/" target="_blank">"www.ielts.org - IELTS official website"</a> </p>
+                    </section>                                       
+                </article>
+                
+        <footer id="f1" name="f1">   
+            <table>
+                <tr>
+                    <td>&copy; VM Frontend Development , 2019</td>
+                    <td> <a href="about.html">About IELTS</a>||<a href="practice.html">IELTS Practice</a>||<a href="tips.html">IELTS Tips</a>||<a href="links.html">Useful Links</a>||<a href="index.html">Home Page</a></td>                    
+                </tr>
+            </table>   
+               
+        </footer>    
+    </body>
+</html>

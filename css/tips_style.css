@@ -1,0 +1,217 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html{
+    max-width: 1400px;
+    margin: auto;    
+}
+
+#d1{
+    display: block;
+    text-align: center;	
+    font-size: 1em;
+    font-weight: bold;
+    border: 1px solid rgb(25, 68, 99);   
+    border-radius: 5px; 
+}
+#d1:hover {
+    display: block;
+    text-align: center;	
+    font-size: 1em;
+    font-weight: bold;
+    border: 1px solid rgb(25, 68, 99);   
+    border-radius: 5px; 
+    background-color: rgb(67, 144, 199);
+}
+a {    
+    color: black;
+    text-align: center;	
+    padding: 5px;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: bold;    
+}
+a:hover {    
+    color: darkblue;
+    text-align: center;	
+    padding: 5px;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: bold;    
+}
+
+.aa {
+    display: block;    
+    border: 1px solid rgb(25, 68, 99);   
+    border-radius: 5px; 
+}
+.aa:hover{
+    display: block;    
+    border: 1px solid rgb(25, 68, 99);   
+    border-radius: 5px; 
+    background-color: rgb(67, 144, 199);
+}
+
+header{
+    float:left;
+    height: 150px;
+    width: 100%;    
+    
+}
+aside{
+    float: right;    
+    background-image: linear-gradient(to bottom, #557A95, #7395AE, whitesmoke );
+    padding: 30px;
+    min-width: 120px;
+    width: 20%;
+    height: 150px;
+    
+}
+nav{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: baseline;
+    justify-content: left;
+    min-height: 50px;
+    clear: both;    
+    background-image: linear-gradient(to bottom, #7395AE, whitesmoke, whitesmoke, #7395AE, whitesmoke );  
+}
+div{
+    text-align: center;	
+    padding: 5px;      
+    font-size: 1em;
+    flex-basis: content;
+    margin: 0px 10px;
+}
+article{        
+    background-color: whitesmoke;
+    width: 100%;   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+    align-items: baseline;
+    justify-content: center;
+    min-height: 100px;
+    padding: 10px 50px;
+}
+section {
+    background-color: whitesmoke;    
+    text-align: justify;
+    padding: 10px; 
+    flex-basis: auto;    
+}
+footer{
+    height: 50px;
+    width: 100%;
+    background-image: linear-gradient(to top, #557A95, #7395AE,whitesmoke);
+    padding: 10px;    
+}
+h3{
+    text-align: left;
+    display: block;
+    background-image: linear-gradient(to right, #557A95, #7395AE,whitesmoke);
+    margin: 10px 0px;
+}
+table{
+    font-size: 0.8em;
+}
+
+td{
+    padding: 10px 20px;
+} 
+.ref{
+    font-size: 0.8em;
+    font-weight: bold;  
+}
+
+section[name="s3"]>ul{
+    border: 1px solid rgb(45, 120, 173);
+    border-radius: 7px;
+}
+
+section[name="s3"]>ul>li>label{
+    list-style: none;
+    display: block;   
+    text-align: left;    
+    margin: 3px;
+    text-shadow: 2px 2px rgb(255, 255, 255);
+    font-weight: 700;
+    min-height: 20px;
+    cursor: pointer;    
+}
+section[name="s3"]>ul>li>label:hover{
+    font-weight: 1000;    
+    text-shadow: 2px 2px rgb(103, 170, 218);   
+}
+.hidden, .hidden + label ~ div {
+    display: none; 
+}
+label ~ div {
+text-align: left;	
+    padding: 5px;      
+    font-size: 1em;    
+    margin: 10px;
+}
+.hidden:checked + label + div {
+    display: block; 
+    background: rgb(164, 201, 228);        
+    padding: 10px; 
+}
+li{
+    padding: 10px;
+}
+ul{
+ list-style-type: none;
+}
+
+@media only screen and (max-width: 599px){ /*mobile*/
+    aside {width: 30%;}  
+    article{
+        padding: 5% 1%;
+    }  
+ 
+    header{
+        width: 70%;    
+        background-image: linear-gradient(to bottom, #557A95, #7395AE, whitesmoke );      
+    }
+    nav {display: none;}
+    .s1{width: 95%;}    
+    .s3{width: 95%;}
+    header{min-height: 180px;}    
+    aside{min-height: 180px;}    
+    td:nth-child(2){
+        display: none;
+    }
+
+}
+@media only screen and (min-width: 600px)   {  /*tablet*/
+    aside {display: none;} 
+    header{
+        background-image: url("../img/pic22.jpg"); 
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        opacity: 0.75;    
+        }
+        table{font-size: 0.65em;}
+        .s1{width: 95%;}    
+        .s3{width: 95%;}
+}
+@media only screen and (min-width: 800px)   { /*desktop*/
+    aside {display: none;}
+    header{
+        background-image: url("../img/pic21.jpg"); 
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        opacity: 0.75;    
+    }
+    table{font-size: 0.75em;}
+    .s1{width: 95%;}    
+    .s3{width: 95%;}
+}
+
+
