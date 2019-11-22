@@ -11,7 +11,7 @@ html{
 #d1{
     display: block;
     text-align: center;	
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: bold;
     border: 1px solid rgb(25, 68, 99);   
     border-radius: 5px; 
@@ -19,7 +19,6 @@ html{
 #d1:hover {
     display: block;
     text-align: center;	
-    font-size: 1em;
     font-weight: bold;
     border: 1px solid rgb(25, 68, 99);   
     border-radius: 5px; 
@@ -56,7 +55,7 @@ a:hover {
 
 header{
     float:left;
-    height: 150px;
+    height: 160px;
     width: 100%;    
     
 }
@@ -66,7 +65,7 @@ aside{
     padding: 30px;
     min-width: 120px;
     width: 20%;
-    height: 150px;
+    height: 160px;
     
 }
 nav{
